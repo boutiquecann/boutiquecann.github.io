@@ -46,6 +46,16 @@ body {
     text-align: center; 
     font-size: 1.5em
 }
+@media only screen and (max-width: 600px) {
+    .loader
+    {
+        top:40%;
+        left:47%;
+    }
+    .loading
+    {
+        left:41%;
+    }
 .loader__bar:nth-child(1) {
   left: 0px;
   -webkit-transform: scale(1, 0.2);
