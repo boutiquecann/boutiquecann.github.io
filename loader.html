@@ -3,16 +3,16 @@
     <link rel="stylesheet" href="assets/css/loader.css" />
 </head>
     <body>
-<div class="loader" style="transform:scale(2);left:26%; bottom:15%;">
+<div class="loader" style="transform:scale(2); top:200px; position:absolute; left:49%">
   <div class="loader__bar"></div>
   <div class="loader__bar"></div>
   <div class="loader__bar"></div>
   <div class="loader__bar"></div>
   <div class="loader__bar"></div>
   <div class="loader__ball"></div>
-</div> 
+</div>
 <div>
-<h1 style="color:#c9974d;font-family: arial; text-align: center; top:50%; left:46%; position:absolute;">LOADING...</h1><br><br>
+<h1 style="color:#c9974d;font-family: arial; text-align: center; top:50%; left:46%; position:absolute; font-size:2em">LOADING...</h1><br><br>
         <h3 id="review" style="color:#c9974d;font-family: arial; padding-top:250px; width:700px; text-align: center">"I totally believe in the quality of your service as well you guys are THE BEST!! I usually get my delivery 2 days after placing my order and I am in Toronto." - Sarah</h3>
 </div>
 <div style="display:none">
@@ -21,17 +21,17 @@
 </body>
 <script>
 var review1 = '"Love your products! Plus the service is excellent. I recommend this site to place orders." -Brad';
-var review2 = '"Great Service! Knowledgable and took a few moments to answer my questions when I called. I am a fair ways away and it came to me quick quick quickly. SO AAA+ rating and the only place I shop. Thanks So much Boutique Cannabis." -Kylie';
+var review2 = '"Great Service! Knowledgable and took a few moments to answer my questions when I called. Thanks So much Boutique Cannabis." -Kylie';
 
 window.addEventListener('load', function() {
     setTimeout(function(){ 
         var current = document.getElementById("review");
         current.innerHTML = review1;
-    }, 2000);
+    }, 3000);
     setTimeout(function(){ 
         var current = document.getElementById("review");
         current.innerHTML = review2;
-    }, 5000);
+    }, 7000);
     
 });
 </script>
