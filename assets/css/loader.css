@@ -49,14 +49,14 @@ body {
 @media only screen and (max-width: 800px) {
     .loader
     {
-        top:150px;
+        top:75px;
         left:40%;
     }
     .loading
     {
         left:0%;
         width:100%;
-        top:300px;
+        top:225px;
     }
 }
 .loader__bar:nth-child(1) {
