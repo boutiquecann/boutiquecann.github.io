@@ -11,9 +11,21 @@ body {
 }
 
 .loader {
-  position: relative;
   width: 75px;
   height: 100px;
+  transform:scale(2); 
+  top:200px; 
+    position: absolute; 
+    left:49%;
+}
+.loading
+{
+    color:#c9974d;
+    font-family: arial; 
+    top:50%; 
+    position:absolute; 
+    left:44%; 
+    font-size:2.5em;
 }
 .loader__bar {
   position: absolute;
@@ -24,6 +36,15 @@ body {
   -webkit-transform-origin: center bottom;
           transform-origin: center bottom;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+#review
+{
+    color:#c9974d;
+    font-family: arial; 
+    padding-top:250px; 
+    max-width:700px; 
+    text-align: center; 
+    font-size: 1.5em
 }
 .loader__bar:nth-child(1) {
   left: 0px;
