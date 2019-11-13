@@ -26,6 +26,10 @@
             color:#c9974d;
             border-color: #c9974d;
         }
+        a:hover
+        {
+            cursor: pointer;
+        }
         
     </style>
 </head>
@@ -36,9 +40,20 @@
         <h1>Welcome to Boutique</h1>
         <h2>Use code WELCOME30 to save $30 on your first order!</h2><br><br>
   <div class="row">
-    <div class="col-6 col-md-3"><a href="https://boutiquecannabis.ca/cannabis-product/buds/"><image src="images/purple.jpg" width="100%"></image></a><br><br><a href="https://boutiquecannabis.ca/cannabis-product/buds/" class="cta">ВUDS</a><br><br></div>
-    <div class="col-6 col-md-3"><a href="https://boutiquecannabis.ca/cannabis-product/edibles/"><image src="images/yum.jpg" width="100%"></image></a><br><br><a href="https://boutiquecannabis.ca/cannabis-product/edibles" class="cta">EDIBLЕS</a><br><br></div>
-    <div class="col-6 col-md-3"><a href="https://boutiquecannabis.ca/cannabis-product/vape-pens-vaporizers/"><image src="images/mandarin.jpg" width="100%"></image></a><br><br><a href="https://boutiquecannabis.ca/cannabis-product/vape-pens-vaporizers/" class="cta">ОILS</a></div>
-      <div class="col-6 col-md-3"><a href="https://boutiquecannabis.ca/cannabis-product/concentrates/hash/"><image src="images/gold.jpg" width="100%"></image></a><br><br><a href="https://boutiquecannabis.ca/cannabis-product/concentrates/hash/" class="cta">HАSH</a></div></div>
+    <div class="col-6 col-md-3"><a onclick="linkedSite('https://boutiquecannabis.ca/cannabis-product/buds/')"><image src="images/purple.jpg" width="100%"></image></a><br><br><a onclick="linkedSite('https://boutiquecannabis.ca/cannabis-product/buds/')" class="cta">ВUDS</a><br><br></div>
+    <div class="col-6 col-md-3"><a onclick="linkedSite('https://boutiquecannabis.ca/cannabis-product/edibles/')"><image src="images/yum.jpg" width="100%"></image></a><br><br><a onclick="linkedSite('https://boutiquecannabis.ca/cannabis-product/edibles')" class="cta">EDIBLЕS</a><br><br></div>
+    <div class="col-6 col-md-3"><a onclick="linkedSite('https://boutiquecannabis.ca/cannabis-product/vape-pens-vaporizers/')"><image src="images/mandarin.jpg" width="100%"></image></a><br><br><a onclick="linkedSite('https://boutiquecannabis.ca/cannabis-product/vape-pens-vaporizers/')" class="cta">ОILS</a></div>
+      <div class="col-6 col-md-3"><a onclick="linkedSite('https://boutiquecannabis.ca/cannabis-product/concentrates/hash/')"><image src="images/gold.jpg" width="100%"></image></a><br><br><a onclick="linkedSite('https://boutiquecannabis.ca/cannabis-product/concentrates/hash/')" class="cta">HАSH</a></div></div>
     </div>
+    <script>
+        
+    var site;
+    function linkedSite(site)
+        {
+            var url = window.location.href;
+            var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+            var linkbuilder = site.concat('?',queryString);
+            window.location.href = linkbuilder;
+        }
+    </script>
 </body>
